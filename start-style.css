@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #200946;
+}
+
+.snake{
+	position: absolute; left: 50px; top: 94px;
+}
+
+.eat{
+	position: absolute; left: 600px; top: 100px;
+}
+
+.snake-2{
+	position: absolute; left: 1200px; top: -10px;
+}
+
+.snake-3{
+	position: absolute; left: 820px; top: 500px;
+}
+
+.eat-2{
+	position: absolute; left: 1150px; top: 390px;
+}
+
+.snake-4{
+	position: absolute; left: 100px; top: 496px;
+	transform: scale(1, -1);
+}
+
+.but-start-game{
+	width: 675px;
+	height: 313px;
+	gap: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.but-start-game form button{
+	width: 685px;
+	height: 212px;
+	border: 1px solid #D802EE;
+	border-radius: 64px;
+	padding: 48px;
+	gap: 10px;
+	color: #FFF;
+	text-align: center;
+	font-weight: 700;
+	font-size: 86px;
+	line-height: 116.18px;
+	text-decoration: none;
+	background: none;
+	transition: 0.7s;
+}
+
+.high-score{
+	width: 675px;
+	height: 77px;
+	border-radius: 32px;
+	padding: 24px;
+	gap: 10px;
+	background: #000000B2;
+	color: #FFF;
+	text-align: center;
+	font-size: 24px;
+	line-height: 29.05px;
+	font-weight: 600;
+}
+
+.btn:hover{
+	background: #000000B2;
+	border: none;
+	transition: 0.9s;
+}
+
+.btn:active{
+	background: #FFFFFF;
+	border: 1px solid #200946;
+	color: #200946;
+	transition: 0.5s;
+}

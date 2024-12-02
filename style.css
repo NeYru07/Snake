@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #200946;
+}
+
+
+.wrapper{
+	width: 672px;
+	height: 723px;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
+	background: #200946;
+	border-radius: 48px;
+	border: 1px solid #D802EE;
+	padding: 0 24px 24px 24px;
+}
+
+.game-details{
+	color: #b8c6de;
+	font-weight: 500;
+	font-size: 1.2rem;
+	padding: 20px 27px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.play-board{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	border: 1px solid #D802EE;
+	border-radius: 10px;
+	background: #200946;
+	grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food{
+	background: url(eat.svg);
+}
+
+.play-board .head{
+	border: 2px solid #D802EE;
+	border-radius: 25%;	
+	margin: 1px;
+}
+
+.controls{
+	display: none;
+	justify-content: space-between;
+}
+
+.controls i{
+	padding: 25px 0;
+	text-align: center;
+	font-size: 1.3rem;
+	color: #b8c6dc;
+	width: calc(100%/4);
+	cursor: pointer;
+	border-right: 1px solid #171b26;
+}
+
+body {
+	background: linear-gradient(149deg, #19778c, #330089, #550f7d, #18796d);
+	background-size: 800% 800%;
+
+	-webkit-animation: AnimationName 28s ease infinite;
+	-moz-animation: AnimationName 28s ease infinite;
+	-o-animation: AnimationName 28s ease infinite;
+	animation: AnimationName 28s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+	0%{background-position:0% 61%}
+	50%{background-position:100% 40%}
+	100%{background-position:0% 61%}
+}
+@-moz-keyframes AnimationName {
+	0%{background-position:0% 61%}
+	50%{background-position:100% 40%}
+	100%{background-position:0% 61%}
+}
+@-o-keyframes AnimationName {
+	0%{background-position:0% 61%}
+	50%{background-position:100% 40%}
+	100%{background-position:0% 61%}
+}
+@keyframes AnimationName {
+	0%{background-position:0% 61%}
+	50%{background-position:100% 40%}
+	100%{background-position:0% 61%}
+}
+
+
+@media  screen and (max-width: 800px) {
+	.wrapper{
+		width: 90vmin;
+		height: 115vmin;
+	}
+
+	.game-details{
+		font-size: 1rem;
+		padding: 15px 27px;
+	}
+
+	.controls{
+	display: flex;
+	}
+
+	.controls i{
+		padding: 15px 0;
+		font-size: 1rem;
+	}
+}

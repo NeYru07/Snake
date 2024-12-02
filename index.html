@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="start-style.css">
+	<title>Start-Game</title>
+</head>
+<body>
+
+	<svg class="snake" width="500" height="200" viewBox="0 0 1100 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<rect x="2" y="302" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="102" y="302" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="202" y="302" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="302" y="302" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="402" y="302" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="502" y="302" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="602" y="302" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="602" y="202" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="602" y="102" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="602" y="2" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="702" y="2" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="802" y="2" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="902" y="2" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+		<rect x="1002.5" y="2" width="96" height="96" rx="48" stroke="white" stroke-width="4"/>
+		</svg>
+
+			<svg class="eat" width="55" height="55" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.5 6.77923C0.5 3.31131 3.31131 0.5 6.77923 0.5H10.8704C15.9538 0.5 17.8912 7.13587 13.6062 9.87096C9.85822 12.2633 9.85822 17.7367 13.6062 20.129C17.8912 22.8641 15.9538 29.5 10.8704 29.5H6.77923C3.31131 29.5 0.5 26.6887 0.5 23.2208V6.77923Z" stroke="#D802EE"/>
+				</svg>
+
+				<svg class="snake-2" width="180" height="299" viewBox="0 0 400 599" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="302" y="597" width="96" height="96" rx="22" transform="rotate(-90 302 597)" stroke="#D802EE" stroke-width="4"/>
+					<rect x="202" y="597" width="96" height="96" rx="22" transform="rotate(-90 202 597)" stroke="#D802EE" stroke-width="4"/>
+					<rect x="202" y="497" width="96" height="96" rx="22" transform="rotate(-90 202 497)" stroke="#D802EE" stroke-width="4"/>
+					<rect x="202" y="397" width="96" height="96" rx="22" transform="rotate(-90 202 397)" stroke="#D802EE" stroke-width="4"/>
+					<rect x="202" y="297" width="96" height="96" rx="22" transform="rotate(-90 202 297)" stroke="#D802EE" stroke-width="4"/>
+					<rect x="202" y="197" width="96" height="96" rx="22" transform="rotate(-90 202 197)" stroke="#D802EE" stroke-width="4"/>
+					<rect x="102" y="197" width="96" height="96" rx="22" transform="rotate(-90 102 197)" stroke="#D802EE" stroke-width="4"/>
+					<rect x="102" y="97" width="96" height="96" rx="22" transform="rotate(-90 102 97)" stroke="#D802EE" stroke-width="4"/>
+					</svg>		
+
+
+					<svg class="snake-3" width="380" height="200" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="2" y="302" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="2" y="202" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="102" y="202" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="202" y="202" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="302" y="202" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="402" y="202" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="402" y="102" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="502" y="102" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="602" y="102" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="702" y="102" width="96" height="96" rx="22" stroke="#D802EE" stroke-width="4"/>
+						<rect x="702" y="1" width="96" height="96" rx="48" stroke="white" stroke-width="4"/>
+						</svg>
+
+						<svg class="eat-2" width="55" height="55" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.5974 98.3333C11.0377 98.3333 1.66667 88.9623 1.66667 77.4026L1.66667 63.7654C1.66667 46.8205 23.7862 40.3628 32.9032 54.646C40.8776 67.1393 59.1224 67.1393 67.0968 54.646C76.2138 40.3628 98.3333 46.8205 98.3333 63.7654V77.4026C98.3333 88.9623 88.9623 98.3333 77.4026 98.3333H22.5974Z" stroke="#D802EE" stroke-width="3.33333"/>
+							</svg>
+
+							<svg class="snake-4" width="180" height="269" viewBox="0 0 400 599" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="302" y="597" width="96" height="96" rx="22" transform="rotate(-90 302 597)" stroke="#D802EE" stroke-width="4"/>
+								<rect x="202" y="597" width="96" height="96" rx="22" transform="rotate(-90 202 597)" stroke="#D802EE" stroke-width="4"/>
+								<rect x="202" y="497" width="96" height="96" rx="22" transform="rotate(-90 202 497)" stroke="#D802EE" stroke-width="4"/>
+								<rect x="202" y="397" width="96" height="96" rx="22" transform="rotate(-90 202 397)" stroke="#D802EE" stroke-width="4"/>
+								<rect x="202" y="297" width="96" height="96" rx="22" transform="rotate(-90 202 297)" stroke="#D802EE" stroke-width="4"/>
+								<rect x="202" y="197" width="96" height="96" rx="22" transform="rotate(-90 202 197)" stroke="#D802EE" stroke-width="4"/>
+								<rect x="102" y="197" width="96" height="96" rx="22" transform="rotate(-90 102 197)" stroke="#D802EE" stroke-width="4"/>
+								<rect x="102" y="97" width="96" height="96" rx="22" transform="rotate(-90 102 97)" stroke="#D802EE" stroke-width="4"/>
+								</svg>
+							
+
+	<div class="but-start-game">
+		<form action="snake.html">
+			<button class="btn">Начать игру</button>
+		</form>
+		<span class="high-score">Рекорд: 0</span>
+	</div>
+
+
+
+	<script src="start-script.js"></script>
+</body>
+</html>
