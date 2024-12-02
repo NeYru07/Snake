@@ -16,34 +16,34 @@ body{
 }
 
 .snake{
-	position: absolute; left: 50px; top: 94px;
+	position: absolute; left: 3.125rem; top: 5.875rem;
 }
 
 .eat{
-	position: absolute; left: 600px; top: 100px;
+	position: absolute; left: 37.5rem; top: 6.25rem;
 }
 
 .snake-2{
-	position: absolute; left: 1200px; top: -10px;
+	position: absolute; left: 75rem; top: -0.625rem;
 }
 
 .snake-3{
-	position: absolute; left: 820px; top: 500px;
+	position: absolute; left: 51.25rem; top: 31.25rem;
 }
 
 .eat-2{
-	position: absolute; left: 1150px; top: 390px;
+	position: absolute; left: 71.875rem; top: 24.375rem;
 }
 
 .snake-4{
-	position: absolute; left: 100px; top: 496px;
+	position: absolute; left: 6.25rem; top: 31rem;
 	transform: scale(1, -1);
 }
 
 .but-start-game{
-	width: 675px;
-	height: 313px;
-	gap: 24px;
+	width: 42.1875rem;
+	height: 19.5625rem;
+	gap: 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -51,33 +51,33 @@ body{
 }
 
 .but-start-game form button{
-	width: 685px;
-	height: 212px;
-	border: 1px solid #D802EE;
-	border-radius: 64px;
-	padding: 48px;
-	gap: 10px;
+	width: 42.8125rem;
+	height: 13.25rem;
+	border: 0.0625rem solid #D802EE;
+	border-radius: 4rem;
+	padding: 3rem;
+	gap: 0.625rem;
 	color: #FFF;
 	text-align: center;
 	font-weight: 700;
-	font-size: 86px;
-	line-height: 116.18px;
+	font-size: 5.375rem;
+	line-height: 7.2613rem;
 	text-decoration: none;
 	background: none;
 	transition: 0.7s;
 }
 
 .high-score{
-	width: 675px;
-	height: 77px;
-	border-radius: 32px;
-	padding: 24px;
-	gap: 10px;
+	width: 42.1875rem;
+	height: 4.8125rem;
+	border-radius: 2rem;
+	padding: 1.5rem;
+	gap: 0.625rem;
 	background: #000000B2;
 	color: #FFF;
 	text-align: center;
-	font-size: 24px;
-	line-height: 29.05px;
+	font-size: 1.5rem;
+	line-height: 1.8156rem;
 	font-weight: 600;
 }
 
@@ -89,7 +89,34 @@ body{
 
 .btn:active{
 	background: #FFFFFF;
-	border: 1px solid #200946;
+	border: 0.0625rem solid #200946;
 	color: #200946;
 	transition: 0.5s;
+}
+
+@media (min-width: 1720px) {
+	.snake{
+	position: absolute; left: 3.125rem; top: 5.875rem;
+}
+
+.eat{
+	position: absolute; left: 37.5rem; top: 6.25rem;
+}
+
+.snake-2{
+	position: absolute; left: 100rem; top: -0.625rem;
+}
+
+.snake-3{
+	position: absolute; left: 79.375rem; top: 40.625rem;
+}
+
+.eat-2{
+	position: absolute; left: 1600px; top: 530px;
+}
+
+.snake-4{
+	position: absolute; left: 6.25rem; top: 656px;
+	transform: scale(1, -1);
+}
 }
